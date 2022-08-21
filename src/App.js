@@ -1,4 +1,6 @@
-import {Books, Movies, Shows} from './components'
+import Books from './views/Books'
+import Movies from './views/Movies'
+import Shows from './views/Shows'
 
 function App() {
   return (
