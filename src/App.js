@@ -1,8 +1,14 @@
+import {Books, Movies, Shows} from './components'
+
 function App() {
   return (
-    <div className="App">
-        <h1>Venato</h1>
-    </div>
+    <>
+      <h1>Venato Application</h1>
+
+      <Books />
+      <Shows />
+      <Movies />
+    </>
   );
 }
 
