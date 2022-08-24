@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/react-gh-pages/static/js/main.4c55d91a.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.4c55d91a.js.map": "/react-gh-pages/static/js/main.4c55d91a.js.map"
+    "main.js": "/venato/static/js/main.4c55d91a.js",
+    "index.html": "/venato/index.html",
+    "main.4c55d91a.js.map": "/venato/static/js/main.4c55d91a.js.map"
   },
   "entrypoints": [
     "static/js/main.4c55d91a.js"
