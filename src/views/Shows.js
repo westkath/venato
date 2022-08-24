@@ -1,10 +1,9 @@
 function Shows() {
     return (
-      <>
-        <h2>Shows</h2>
-      </>
+        <>
+            <h2>Shows</h2>
+        </>
     );
-  }
+}
   
-  export default Shows;
-  
+export default Shows;

@@ -1,52 +1,50 @@
-{
-    "books": [
-        {
-            "id": 1,
-            "author": "Abnett, Dan",
-            "title": "Triumff",
-            "read": false,
-            "review": null,
-            "read_date": null
-        },
-        {
-            "id": 2,
-            "author": "Allan, Claire",
-            "title": "Apple of my Eye",
-            "read": false,
-            "review": null,
-            "read_date": null
-        },
-        {
-            "id": 3,
-            "author": "Banks, Iain M",
-            "title": "The Algebraist",
-            "read": false,
-            "review": null,
-            "read_date": null
-        },
-        {
-            "id": 4,
-            "author": "Bardugo, Leigh",
-            "title": "Shadow and Bone",
-            "read": false,
-            "review": null,
-            "read_date": null
-        },
-        {
-            "id": 5,
-            "author": "Bardugo, Leigh",
-            "title": "Siege and Storm",
-            "read": false,
-            "review": null,
-            "read_date": null
-        },
-        {
-            "id": 6,
-            "author": "Bardugo, Leigh",
-            "title": "Run and Rising",
-            "read": false,
-            "review": null,
-            "read_date": null
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "author": "Abnett, Dan",
+        "title": "Triumff",
+        "read": false,
+        "review": null,
+        "read_date": null
+    },
+    {
+        "id": 2,
+        "author": "Allan, Claire",
+        "title": "Apple of my Eye",
+        "read": false,
+        "review": null,
+        "read_date": null
+    },
+    {
+        "id": 3,
+        "author": "Banks, Iain M",
+        "title": "The Algebraist",
+        "read": false,
+        "review": null,
+        "read_date": null
+    },
+    {
+        "id": 4,
+        "author": "Bardugo, Leigh",
+        "title": "Shadow and Bone",
+        "read": false,
+        "review": null,
+        "read_date": null
+    },
+    {
+        "id": 5,
+        "author": "Bardugo, Leigh",
+        "title": "Siege and Storm",
+        "read": false,
+        "review": null,
+        "read_date": null
+    },
+    {
+        "id": 6,
+        "author": "Bardugo, Leigh",
+        "title": "Run and Rising",
+        "read": false,
+        "review": null,
+        "read_date": null
+    }
+]

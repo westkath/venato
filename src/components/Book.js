@@ -1,12 +1,22 @@
-function Book(props) {
+function Book({book}) {
     return (
-      <>
-        <li>
-            <h3>{props.title} by {props.author}</h3>
-        </li>
-      </>
+        <>
+            {book.title} by {book.author}
+
+            {book.read
+                ? 
+                <p>
+                    Read on {book.read_date}
+                    Review:
+                    {book.review}
+                </p>
+                : 
+                <p>Remains on the "to-be-read" pile.</p>
+            }
+
+            <br/>
+        </>
     );
-  }
-  
-  export default Book;
-  
+}
+
+export default Book;
