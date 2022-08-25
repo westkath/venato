@@ -1,4 +1,4 @@
-function Book({book}) {
+const Book = ({book}) => {
     return (
         <>
             {book.title} by {book.author}

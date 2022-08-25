@@ -1,4 +1,4 @@
-import Book from '../components/Book'
+import Book from './Book'
 import books from '../data/books.json'
 
 function Books() {

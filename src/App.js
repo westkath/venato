@@ -1,15 +1,37 @@
-import Books from './views/Books'
-import Movies from './views/Movies'
-import Shows from './views/Shows'
+import NavBar from './components/NavBar'
+import Books from './components/Books'
+import Movies from './components/Movies'
+import Shows from './components/Shows'
+import { useState } from 'react'
 
-function App() {
+const App = () => {
+    const [ view, setView ] = useState("Books");
+
+    const changeActiveView = (newView) => setView(newView)
+
     return (
         <>
-            <h1>Venato Application</h1>
+            <NavBar handler={changeActiveView}/>
 
-            <Books />
-            <Shows />
-            <Movies />
+            {
+                view === "Home" &&
+                <h1>Random Content</h1>
+            }
+
+            {
+                view === "Books" &&
+                <Books />
+            }
+
+            {
+                view === "Shows" &&
+                <Shows />
+            }
+
+            {
+                view === "Movies" &&
+                <Movies />
+            }
         </>
     );
 }
