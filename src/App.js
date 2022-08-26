@@ -9,29 +9,26 @@ const App = () => {
 
     const changeActiveView = (newView) => setView(newView)
 
+    const displayView = (view) => {
+        switch(view) {
+            case "Home":
+                return <h1>Random Content</h1>
+            case "Books":
+                return <Books />
+            case "Shows":
+                return <Shows />
+            case "Movies":
+                return <Movies />
+            default:
+                return <h1>Random Content</h1>
+        }
+    }
+
     return (
         <>
-            <NavBar handler={changeActiveView}/>
+            <NavBar handler = { changeActiveView }/>
 
-            {
-                view === "Home" &&
-                <h1>Random Content</h1>
-            }
-
-            {
-                view === "Books" &&
-                <Books />
-            }
-
-            {
-                view === "Shows" &&
-                <Shows />
-            }
-
-            {
-                view === "Movies" &&
-                <Movies />
-            }
+            { displayView(view) }
         </>
     );
 }
