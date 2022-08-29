@@ -1,12 +1,17 @@
-const NavBar = ({handler}) => {
-    return <div>
-        <ul>
-            <li><button onClick={() => handler("Home")}>Home</button></li>
-            <li><button onClick={() => handler("Books")}>Books</button></li>
-            <li><button onClick={() => handler("Shows")}>Shows</button></li>
-            <li><button onClick={() => handler("Movies")}>Movies</button></li>
-        </ul>
-    </div>
+import React from 'react'
+import { StyledNavBar, StyledLink } from './Styles'
+
+const NavBar = () => {
+    return (
+        <StyledNavBar>
+            <ul>
+                <li><StyledLink to="/venato">Home</StyledLink></li>
+                <li><StyledLink to="/venato/books">Books</StyledLink></li>
+                <li><StyledLink to="/venato/shows">Shows</StyledLink></li>
+                <li><StyledLink to="/venato/movies">Movies</StyledLink></li>
+            </ul>
+        </StyledNavBar>
+    )
 }
 
 export default NavBar;

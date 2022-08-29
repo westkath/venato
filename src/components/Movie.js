@@ -1,7 +1,7 @@
 const Movie = ({movie}) => {
     return (
         <>
-            {movie.title}
+            <h1>{movie.title}</h1>
 
             {movie.watched
                 ? 

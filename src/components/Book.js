@@ -1,7 +1,7 @@
 const Book = ({book}) => {
     return (
         <>
-            {book.title} by {book.author}
+            <h1>{book.title} by {book.author}</h1>
 
             {book.read
                 ? 

@@ -1,36 +1,18 @@
-import NavBar from './components/NavBar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
 import Books from './components/Books'
-import Movies from './components/Movies'
 import Shows from './components/Shows'
-import { useState } from 'react'
+import Movies from './components/Movies'
 
 const App = () => {
-    const [ view, setView ] = useState("Books");
-
-    const changeActiveView = (newView) => setView(newView)
-
-    const displayView = (view) => {
-        switch(view) {
-            case "Home":
-                return <h1>Random Content</h1>
-            case "Books":
-                return <Books />
-            case "Shows":
-                return <Shows />
-            case "Movies":
-                return <Movies />
-            default:
-                return <h1>Random Content</h1>
-        }
-    }
-
     return (
-        <>
-            <NavBar handler = { changeActiveView }/>
-
-            { displayView(view) }
-        </>
-    );
+        <Routes>
+            <Route exact path = "/venato" element = { <Home /> } />
+            <Route exact path = "/venato/books" element = { <Books /> } />
+            <Route exact path = "/venato/shows" element = { <Shows /> } />
+            <Route exact path = "/venato/movies" element = { <Movies /> } />
+        </Routes>
+    )
 }
 
 export default App;

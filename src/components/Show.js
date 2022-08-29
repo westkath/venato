@@ -1,7 +1,7 @@
 const Show = ({show}) => {
     return (
         <>
-            {show.title}
+            <h1>{show.title}</h1>
 
             {show.watched
                 ? 
