@@ -1,24 +1,56 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+const sizes = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px',
+};
+
+export const devices = {
+    mobileS: `(min-width: ${sizes.mobileS})`,
+    mobileM: `(min-width: ${sizes.mobileM})`,
+    mobileL: `(min-width: ${sizes.mobileL})`,
+    tablet: `(min-width: ${sizes.tablet})`,
+    laptop: `(min-width: ${sizes.laptop})`,
+    laptopL: `(min-width: ${sizes.laptopL})`,
+    desktop: `(min-width: ${sizes.desktop})`,
+};
+
 const StyledNavBar = styled.div`
     & ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        position: relative;
         background-color: #03448f;
     }
 
     & li {
         float: left;
     }
+
+    & li.logo {
+        float: right;
+        margin-top: 9px;
+        margin-right: 9px;
+    }
+
+    @media screen and (max-width: ${devices.mobileL}) {
+        float: none;
+        display: block; 
+    }
 `
 
 const StyledLink = styled(Link)`
     text-decoration: none;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     color: white;
     display: block;
     font-family: helvetica;
@@ -36,13 +68,28 @@ const Heading = styled.div`
 `
 
 const Tiles = styled.div`
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    @media ${devices.desktop} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media ${devices.laptop} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media ${devices.laptopL} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media ${devices.tablet} {
+        grid-template-columns: repeat(3, 1fr);
+    }
 `
 
 const Tile = styled.div`
-    width: 20%;
     margin: 10px;
     padding: 10px;
     display: inline-block;
@@ -50,6 +97,11 @@ const Tile = styled.div`
 
     & h1 {
         font-family: Helvetica;
+    }
+
+    & p {
+        font-family: Helvetica;
+        padding: 5px;
     }
 
     &:hover {
