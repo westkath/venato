@@ -81,15 +81,15 @@ const Tiles = styled.div`
     }
 
     @media ${devices.mobileL} {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @media ${devices.tablet} {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @media ${devices.laptop} {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @media ${devices.laptopL} {
