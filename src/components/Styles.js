@@ -72,8 +72,20 @@ const Tiles = styled.div`
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 
-    @media ${devices.desktop} {
-        grid-template-columns: repeat(4, 1fr);
+    @media ${devices.mobileS} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media ${devices.mobileM} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media ${devices.mobileL} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ${devices.tablet} {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @media ${devices.laptop} {
@@ -84,8 +96,8 @@ const Tiles = styled.div`
         grid-template-columns: repeat(4, 1fr);
     }
 
-    @media ${devices.tablet} {
-        grid-template-columns: repeat(3, 1fr);
+    @media ${devices.desktop} {
+        grid-template-columns: repeat(5, 1fr);
     }
 `
 
