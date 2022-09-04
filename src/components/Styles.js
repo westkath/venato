@@ -41,7 +41,7 @@ const StyledNavBar = styled.div`
         margin-right: 9px;
     }
 
-    @media screen and (max-width: ${devices.mobileL}) {
+    @media screen and (max-width: ${devices.mobileS}) & li {
         float: none;
         display: block; 
     }
@@ -63,46 +63,17 @@ const StyledLink = styled(Link)`
 const Heading = styled.div`
     & h1 {
         font-family: Helvetica;
-        margin: 10px;
+        text-align: center;
     }
 `
 
 const Tiles = styled.div`
     display: grid;
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-
-    @media ${devices.mobileS} {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @media ${devices.mobileM} {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @media ${devices.mobileL} {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @media ${devices.tablet} {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media ${devices.laptop} {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media ${devices.laptopL} {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    @media ${devices.desktop} {
-        grid-template-columns: repeat(5, 1fr);
-    }
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
 const Tile = styled.div`
-    margin: 10px;
     padding: 10px;
     display: inline-block;
     background-color: #0479cc;
