@@ -40,11 +40,6 @@ const StyledNavBar = styled.div`
         margin-top: 9px;
         margin-right: 9px;
     }
-
-    @media screen and (max-width: ${devices.mobileS}) & li {
-        float: none;
-        display: block; 
-    }
 `
 
 const StyledLink = styled(Link)`
@@ -53,7 +48,7 @@ const StyledLink = styled(Link)`
     padding: 16px 16px;
     color: white;
     display: block;
-    font-family: helvetica;
+    font-family: Helvetica;
 
     &:hover {
         background-color: #045bbf;
