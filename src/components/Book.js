@@ -5,11 +5,10 @@ const Book = ({book}) => {
 
             {book.read
                 ? 
-                <p>
-                    Read on {book.read_date}
-                    Review:
-                    {book.review}
-                </p>
+                <>
+                    <p>Read on {book.readDate}</p>
+                    <p>Review: {book.review}</p>
+                </>
                 : 
                 <p>Remains on the "to-be-read" pile.</p>
             }

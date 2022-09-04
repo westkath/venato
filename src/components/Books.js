@@ -13,7 +13,7 @@ function Books() {
             <Tiles>
                 {books.map(book => {
                     return (
-                        <Tile>
+                        <Tile consumed={book.read} >
                             <Book book={book} key={book.id} />
                         </Tile>
                     )

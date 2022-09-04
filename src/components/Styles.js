@@ -68,10 +68,13 @@ const Tiles = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
-const Tile = styled.div`
+const Tile = styled.div.attrs(props => ({
+    bg: props.consumed ? "#065c11" : "#0479cc",
+    hover: props.consumed ? "#023b08" : "#045bbf"
+}))`
     padding: 10px;
     display: inline-block;
-    background-color: #0479cc;
+    background-color: ${props => props.bg};
 
     & h1 {
         font-family: Helvetica;
@@ -83,7 +86,7 @@ const Tile = styled.div`
     }
 
     &:hover {
-        background-color: #045bbf;
+        background-color: ${props => props.hover};
     }
 `
 
