@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/venato/static/js/main.55e72036.js",
+    "main.js": "/venato/static/js/main.a6b168ee.js",
     "index.html": "/venato/index.html",
-    "main.55e72036.js.map": "/venato/static/js/main.55e72036.js.map"
+    "main.a6b168ee.js.map": "/venato/static/js/main.a6b168ee.js.map"
   },
   "entrypoints": [
-    "static/js/main.55e72036.js"
+    "static/js/main.a6b168ee.js"
   ]
 }
